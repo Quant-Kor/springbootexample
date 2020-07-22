@@ -41,10 +41,29 @@ java -jar hello-spring-0.0.1-SNAPSHOT.jar  실행!
 
 
 
+---------------------------------------------------------
+스프링 웹 MVC 
+-정적 컨텐츠
+-MVC(Model, View, Controller)
+-API
+
+정적 컨텐츠는 말그대로 html파일을 그냥 보여주는 것
+MVC는 저 3가지를 이용해서 데이터를 보내줌 
+ex)@RequestParam을 이용해 변수를 화면에 띄울 수 있게 함
+?name = spring
+
+API는(객체반환)
+@ResponseBody를 이용해 http의 헤더부와 바디부에서 이 데이터를 직접 넣어주는 방식으로 작동함
+html태그같은 것들이 존재하지 않고 페이지 소스보기를 눌렀을 시 그냥 데이터 파일만 보임
+
+json방식으로 반환할때 자주 api를 씀
+
+getter and setter -> java bean 규약 
+private 변수는 바로 안에서 못꺼내기 때문에 get 과 set방식을 통해 변수를 사용할 수 있게 꺼냄(프로퍼티 접근 방식)
+
+객체가 반환되면 json방식으로 반환함(spring responsebody를 통해서 -> httpmessage Converter)
 
 
-
-
-
-
+----------------------------
+테스트가 끝나고 난후 그 데이터를 클리어 해주는 코드가 필요!
 
